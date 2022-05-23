@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Receipes</title>
+		<link rel="stylesheet" type="text/css" href="receipe.css">
+	</head>
+	
+	<body id="body" onload="preLoadAllReceipes()">
+		<nav class="nav">
+			<div class="nav_menu" id="nav-menu">
+				<ul class="nav_list">
+					<li class="nav_item"><a href="/Users/gavinyang/Desktop/CPSC455/CPSC455-Assignments/assignment1/index.html" class="nav_link"><h1>About Me</h1></a></li>
+					<li class="nav_item"><a href="/Users/gavinyang/Desktop/CPSC455/CPSC455-Assignments/assignment1/receipe.html" class="nav_link"><h1>HOME</h1></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="title">
+            <h1>Receipe Application</h1>
+        </section>
+
+		<section class="receipe_introduction">
+			<div id="home" class="content" text-align="center" >
+				<p>Please type in the below input boxes to add new receipe! </p>
+				<p>	
+					<label for="name">Name: </label><br>
+					<input type="text" id="name">
+				</p>
+				<p>	
+					<label for="ingredients">Ingredents: </label><br>
+					<input type="text" id="ingredients">
+				</p>
+				<p>	
+					<label for="instructions">Instructions: </label><br>
+					<input type="text" id="instructions">
+				</p>
+				<p>	
+					<button class="button" id="addBtn">add receipe</button>
+					<button class="button" id="deleteAllBtn" onclick="deleteAllReceipes()">Delete(All Receipes)</button>
+				</p>
+			</div>
+		</section>
+
+		<section class="display">
+			<ul class="list" id="receipe_list">
+
+			</ul>
+		</section>
+		<script type="text/javascript" src="receipe.js"></script>
+	</body>
+</html>
