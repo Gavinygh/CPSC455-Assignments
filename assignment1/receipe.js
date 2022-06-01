@@ -1,6 +1,7 @@
 var receipe_list = document.getElementById("receipe_list");
 var addBtn = document.getElementById("addBtn");
 var deleteAllBtn = document.getElementById("deleteAllBtn");
+var resetBtn = document.getElementById("resetBtn");
 var storedReceipes = JSON.stringify({
     "receipeList":[
         {
@@ -69,8 +70,18 @@ addBtn.addEventListener("click", function() {
     instructionsInput.value="";
   });
 
-  deleteAllBtn.addEventListener("click", function() {
+deleteAllBtn.addEventListener("click", function() {
     while (receipe_list.firstChild) {
         receipe_list.removeChild(receipe_list.firstChild);
-      }
-  });
+    }
+});
+
+resetBtn.addEventListener("click", function() {
+    var nameInput = document.getElementById("name");
+    var ingredientsInput = document.getElementById("ingredients");
+    var instructionsInput = document.getElementById("instructions");
+    nameInput.value="";
+    ingredientsInput.value="";
+    instructionsInput.value="";
+});
+

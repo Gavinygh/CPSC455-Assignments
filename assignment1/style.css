@@ -5,49 +5,33 @@ body {
 }
 
 .nav {
-  width: 100%;
-  height: 10;
-  position: relative;
-  line-height: 10px;
   text-align: center;
   border: 2px solid black;
 }
 
-.nav_menu {
-  position: relative;
-  width: 100%;
-  background-color:beige;
-}
-
-.nav_list {
-  width: 35%;
-  display: flex;
-  list-style: none;
-  background-color:beige;
-  position: relative;
-  top:0;
-  left:28%;
-}
-
-.nav_item {
-  width: auto;
+ul {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
-  padding-right: 7rem;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.nav_link {
-  font-size:large;
+li {
+  display:inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: black;
-  font-size: 2.4rem;
 }
 
-a {
-  font-weight: inherit;
-  text-transform: uppercase;
-  text-shadow: 1px 1px rgb(75, 60, 60);
-  background-color: #f0ede9;
-  color: black;
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 
 h1 {
@@ -59,17 +43,15 @@ h1 {
 }
 
 .introduction {
-  text-align: left;
   max-width: 38em;
-  margin-left: 2.8em;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 6em;
 }
 
 .contact {
-  text-align: left;
   max-width: 38em;
-  margin-left: 2.8em;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 3em;
 }
