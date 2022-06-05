@@ -33,7 +33,12 @@ export default function ReceipeCard(props) {
       <button id="view_button" onClick={handlePopup}>
         View
       </button>
-      {isPopup && <Popup toggle={handlePopup} />}
+      {isPopup && 
+      <Popup 
+      toggle={handlePopup} 
+      name={props.name} 
+      ingredients={props.ingredients}
+      instructions={props.instructions} />}
     </ul>
   );
 }

@@ -8,7 +8,13 @@ export default function PopUp(props) {
    <div className="Popup">
      <div className="Popup_content">
      <span className="close" onClick={handleClick}>&times;</span>
-     <p>I'm A Pop Up!!!</p>
+     <p> 
+        Name: {props.name}
+        <br />
+        Ingredients: {props.ingredients}
+        <br />
+        Instructions: {props.instructions} 
+     </p>
     </div>
    </div>
   );

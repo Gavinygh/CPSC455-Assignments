@@ -4,6 +4,7 @@ import AboutMe from "./components/AboutMe";
 import ReceipesPage from "./components/ReceipesPage";
 import { useState } from "react";
 import Navbar from "./components/Navbar";
+import "./App.css";
 
 function App() {
   const [isHomeVisible, setIsHomeVisible] = useState(false);
@@ -12,7 +13,7 @@ function App() {
     setIsHomeVisible(childdata);
   };
   return (
-    <div>
+    <div id="App">
       <Header />
       <Navbar childToParent={childToParent} />
       <hr></hr>

@@ -4,7 +4,7 @@ import ReceipeList from "./ReceipeList";
 
 export default function ReceipesPage() {
     return (
-      <div>
+      <div id="receipe_page">
         <ReceipeForm />
         <hr></hr>
         <ReceipeList />

@@ -33,11 +33,12 @@ function ReceipeForm(props) {
   };
 
   return (
-    <div>
+    <div id="receipe_form">
       <form id="form">
         <label>Name:</label>
         <br />
         <input
+          id="name"
           name="name"
           type="text"
           onChange={(event) => setName(event.target.value)}
@@ -47,6 +48,7 @@ function ReceipeForm(props) {
         <label>Ingredients:</label>
         <br />
         <input
+          id="ingredients"
           name="ingred"
           type="text"
           onChange={(event) => setIngredients(event.target.value)}
@@ -56,6 +58,7 @@ function ReceipeForm(props) {
         <label>Instructions:</label>
         <br />
         <input
+          id="instructions"
           name="instr"
           type="text"
           onChange={(event) => setInstructions(event.target.value)}
@@ -89,28 +92,3 @@ function ReceipeForm(props) {
 }
 
 export default ReceipeForm;
-/*
-<label>Name: </label>
-        <br></br>
-        <input
-          ref={(input) => (props.inputName = input)}
-          name="name"
-          type="text"
-        />
-        <br></br>
-        <label>Ingredients: </label>
-        <br></br>
-        <input
-          ref={(input) => (props.inputIngred = input)}
-          name="ingred"
-          type="text"
-        />
-        <br></br>
-        <label>Instructions: </label>
-        <br></br>
-        <input
-          ref={(input) => (props.inputInstr = input)}
-          name="instr"
-          type="text"
-        />
-*/

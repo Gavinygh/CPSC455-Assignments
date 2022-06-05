@@ -3,7 +3,7 @@ import Receipes from "./Receipes";
 
 export default function ReceipeList() {
     return (
-      <div>
+      <div id="receipe_list">
         <h3>Receipes</h3>
         <Receipes />
       </div>

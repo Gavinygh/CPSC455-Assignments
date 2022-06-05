@@ -6,7 +6,7 @@ export default function Receipes() {
   const receipes = useSelector((state) => state.receipesReducer);
 
   return (
-    <div>
+    <div id="receipes">
       {receipes.map((data, key) => (
         <ReceipeCard 
         key={key}
