@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { deleteReceipe } from "../actions";
 import Popup from "./Popup";
 
-export default function ReceipeCard(props) {
+export default function StoredReceipeCard(props) {
   const dispatch = useDispatch();
   const [isPopup, setIsPopup] = useState(false);
 
@@ -23,7 +23,6 @@ export default function ReceipeCard(props) {
     <ul>
       <li> Name: {props.name} </li>
       <li> Ingredients: {props.ingredients} </li>
-      <li> Instructions: {props.instructions} </li>
       <button
         id="delete_button"
         onClick={handleDelete}
@@ -31,13 +30,12 @@ export default function ReceipeCard(props) {
         Delete
       </button>
       <button id="view_button" onClick={handlePopup}>
-        View
+        View Instructions
       </button>
       {isPopup && 
       <Popup 
-      toggle={handlePopup} 
-      name={props.name} 
-      ingredients={props.ingredients}
+      toggle={handlePopup}
+      name={props.name}
       instructions={props.instructions} />}
     </ul>
   );

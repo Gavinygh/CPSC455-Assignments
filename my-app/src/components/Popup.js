@@ -11,9 +11,7 @@ export default function PopUp(props) {
      <p> 
         Name: {props.name}
         <br />
-        Ingredients: {props.ingredients}
-        <br />
-        Instructions: {props.instructions} 
+        Instructions: {props.instructions}
      </p>
     </div>
    </div>

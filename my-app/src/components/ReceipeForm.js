@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { addReceipe, clearReceipes } from "../actions";
 
-function ReceipeForm(props) {
+function ReceipeForm() {
   const dispatch = useDispatch();
   const [name, setName] = useState("");
   const [ingred, setIngredients] = useState("");

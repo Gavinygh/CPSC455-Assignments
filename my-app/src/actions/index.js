@@ -17,3 +17,10 @@ export const deleteReceipe = (receipe) => {
     payload: receipe
   };
 };
+
+export const restoreReceipe = (receipe) => {
+  return {
+    type: "RESTORE_RECEIPE",
+    payload: receipe
+  };
+};
