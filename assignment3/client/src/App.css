@@ -1,0 +1,68 @@
+#App {
+    background-color:beige;
+}
+.header {
+    text-align: center;
+}
+
+.Navbar {
+    text-align: center;
+}
+  
+.nav_list {
+    margin: 0;
+    padding: 0;
+}
+
+#name{
+    font-size: 10pt;
+    height: 42px;
+    width : 50%;
+  }
+  
+#ingredients{
+    font-size: 10pt;
+    height: 42px;
+    width : 50%;
+  }
+  
+  #instructions{
+    font-size: 10pt;
+    height: 42px;
+    width : 50%;
+  }
+
+  .Popup {
+    position: fixed;
+    width: 100%;
+    height: 100vw;
+    top: 0;
+    left: 0;
+  }
+  
+  .Popup_content {
+    position: relative;
+    width: 50vw;
+    height: 15vw;
+    margin: auto;
+    background:cornsilk;
+    border-radius: 0.5vw;
+    padding: 5vw;
+    border: 10px solid bisque;
+    top: 10vw;
+  }
+ 
+  .Popup_content span {
+    position: relative;
+    float: right;
+    cursor: pointer;
+    margin: -4vw;
+    width: 5vw;
+    text-align: center;
+    color: white;
+    background-color: salmon;
+  }
+  
+  .Popup_content p {
+    font-size: 2vw;
+  }
