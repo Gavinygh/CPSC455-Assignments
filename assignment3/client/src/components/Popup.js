@@ -5,9 +5,9 @@ import { editReceipeAsync } from "../redux/users/thunks";
 
 export default function PopUp(props) {
   const dispatch = useDispatch();
-  const [name, setName] = useState("");
-  const [ingred, setIngredients] = useState("");
-  const [instr, setInstructions] = useState("");
+  const [name, setName] = useState(props.name);
+  const [ingred, setIngredients] = useState(props.ingredients);
+  const [instr, setInstructions] = useState(props.instructions);
 
   const handleClick = () => {
    props.toggle();
@@ -23,13 +23,6 @@ export default function PopUp(props) {
         instructions: instr
       })
     );
-    handleClearForm();
-  };
-
-  const handleClearForm = () => {
-    setName('');
-    setIngredients('');
-    setInstructions('');
   };
   
   return (
@@ -44,7 +37,7 @@ export default function PopUp(props) {
           name="name"
           type="text"
           onChange={(event) => setName(event.target.value)}
-          value={name}
+          defaultValue={props.name}
         />
         <br />
         <label>Ingredients:</label>
@@ -54,7 +47,7 @@ export default function PopUp(props) {
           name="ingred"
           type="text"
           onChange={(event) => setIngredients(event.target.value)}
-          value={ingred}
+          defaultValue={props.ingredients}
         />
         <br />
         <label>Instructions:</label>
@@ -64,7 +57,7 @@ export default function PopUp(props) {
           name="instr"
           type="text"
           onChange={(event) => setInstructions(event.target.value)}
-          value={instr}
+          defaultValue={props.instructions}
         />
       </form>
       <button

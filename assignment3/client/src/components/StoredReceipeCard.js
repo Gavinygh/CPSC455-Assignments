@@ -36,6 +36,9 @@ export default function StoredReceipeCard(props) {
       {isPopup && 
       <Popup 
       toggle={handlePopup}
+      name={props.name}
+      ingredients={props.ingredients}
+      instructions={props.instructions}
       id={props.id} />}
     </ul>
   );

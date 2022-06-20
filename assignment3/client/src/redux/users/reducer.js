@@ -51,7 +51,7 @@ const usersSlice = createSlice({
       })
       .addCase(addReceipeAsync.fulfilled, (state, action) => {
         state.addReceipe = REQUEST_STATE.FULFILLED;
-        state.storedReceipes.push(action.payload);
+        state.storedReceipes.unshift(action.payload);
       })
       .addCase(addReceipeAsync.rejected, (state, action) => {
         state.addReceipe = REQUEST_STATE.REJECTED;
@@ -67,7 +67,7 @@ const usersSlice = createSlice({
         const index = state.storedReceipes.indexOf(foundReceipe);
 
         state.storedReceipes.splice(index, 1);
-        state.deletedReceipes.push(foundReceipe);
+        state.deletedReceipes.unshift(foundReceipe);
       })
       .addCase(deleteReceipeAsync.rejected, (state, action) => {
         state.deleteReceipe = REQUEST_STATE.REJECTED;
@@ -83,7 +83,7 @@ const usersSlice = createSlice({
         const index = state.deletedReceipes.indexOf(foundReceipe);
 
         state.deletedReceipes.splice(index, 1);
-        state.storedReceipes.push(foundReceipe);
+        state.storedReceipes.unshift(foundReceipe);
       })
       .addCase(restoreReceipeAsync.rejected, (state, action) => {
         state.restoreReceipe = REQUEST_STATE.REJECTED;

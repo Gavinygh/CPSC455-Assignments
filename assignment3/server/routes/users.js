@@ -6,8 +6,8 @@ const storedReceipes= [
     {
       id: uuid(),
       name: "poutine",
-      ingredients: "fries, source",
-      instructions: "bla bla"
+      ingredients: "fries, cheese, gravy",
+      instructions: "Mix cheese and gravy"
     },
     {
       id: uuid(),
@@ -54,7 +54,7 @@ router.delete('/storedReceipes', function (req, res, next) {
   if (!foundReceipe) return res.status(404).send({ message: 'Receipe not found' });
   const index = storedReceipes.indexOf(foundReceipe);
   storedReceipes.splice(index, 1);
-  deletedReceipes.push(foundReceipe);
+  deletedReceipes.unshift(foundReceipe);
 
   return res.send(foundReceipe);
 });
@@ -66,7 +66,7 @@ router.delete('/deletedReceipes', function (req, res, next) {
   if (!foundReceipe) return res.status(404).send({ message: 'Receipe not found' });
   const index = deletedReceipes.indexOf(foundReceipe);
   deletedReceipes.splice(index, 1);
-  storedReceipes.push(foundReceipe);
+  storedReceipes.unshift(foundReceipe);
 
   return res.send(foundReceipe);
 });
