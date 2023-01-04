@@ -1,0 +1,135 @@
+body {
+  padding:50px;
+  background-color: beige;
+  background-size: cover;
+}
+
+.nav {
+  width: 100%;
+  height: 10;
+  position: relative;
+  line-height: 10px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.nav_menu {
+  position: relative;
+  width: 100%;
+  background-color:beige;
+}
+
+.nav_list {
+  width: 35%;
+  display: flex;
+  list-style: none;
+  background-color:beige;
+  position: relative;
+  top:0;
+  left:28%;
+}
+
+.nav_item {
+  width: auto;
+  padding: 0;
+  padding-right: 7rem;
+}
+
+.nav_link {
+  font-size:large;
+  text-decoration: none;
+  color: black;
+  font-size: 2.4rem;
+}
+
+a {
+  font-weight: inherit;
+  text-transform: uppercase;
+  text-shadow: 1px 1px rgb(75, 60, 60);
+  background-color: #f0ede9;
+  color: black;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+#name{
+  font-size: 18pt;
+  height: 42px;
+  width : 300px;
+}
+
+#ingredients{
+  font-size: 18pt;
+  height: 42px;
+  width : 300px;
+}
+
+#instructions{
+  font-size: 18pt;
+  height: 42px;
+  width : 300px;
+}​
+
+p {
+  font-weight: inherit;
+  text-transform: uppercase;
+  text-shadow: 1px 1px rgb(75, 60, 60);
+  background-color: #f0ede9;
+  color: black;
+}
+
+
+#receipe_web_title {
+  font-size: 20px;
+}
+  
+  .title {
+    text-align: left;
+    max-width: 38em;
+    margin-left: 2.8em;
+    margin-right: auto;
+    margin-top: 4em;
+  }
+  
+  .receipe_introduction {
+    float:left;
+    text-align: left;
+    max-width: 38em;
+    margin-left: 2.8em;
+    margin-right: auto;
+    margin-top: 1em;
+  }
+
+  .receipe_list {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background: #f8f9fa;
+  }
+  
+  .receipe_div {
+    background: #f2f4f6;
+    margin-left: 5px;
+    margin-top: 5px;
+    display: flex;
+  }
+  
+  .delete-receipe {
+    margin-left: auto;
+    background: #262424;
+    color: #ffffff;
+  }
+
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+  }
